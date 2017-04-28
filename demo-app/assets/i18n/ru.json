@@ -1,0 +1,108 @@
+{
+  "COMMON": {
+    "BACK_BUTTON":"Назад"
+  },
+  "ERROR": {
+    "FIRST_NAME_REQUIRED": "Введите имя",
+    "LAST_NAME_REQUIRED": "Введите фамилию",
+    "EMAIL_REQUIRED": "Введите email",
+    "EMAIL_INVALID": "Введите действительный email",
+    "EMAIL_CONFLICT_1": "Данный email уже зарегистрирован на TheScene.Co",
+    "EMAIL_CONFLICT_2": "Еще не зарегестрированы?",
+    "PASS_REQUIRED": "Пожалуйста, введите пароль",
+    "PASS_MIN_LENGTH": "Ваш пароль должен содержать больше 8 символов",
+    "INVALID_CREDENTIALS": "Неверные данные"
+  },
+  "HEADER": {
+    "MENU": "Меню",
+    "LOGIN": "Войти",
+    "SIGNUP": "Регистрация",
+    "NO_INTERNET": "Отсутсвует соединение"
+  },
+  "FOOTER": {
+  },
+  "MENU": {
+    "EVENTS": "Событие",
+    "ARTISTS": "Выступают",
+    "VENUES": "Место проведения",
+    "HOW_IT_WORKS": "Как это работает",
+    "MYSCENE": "My Scene",
+    "CALENDAR": "Календарь",
+    "MESSAGES": "Сообщения",
+    "SETTINGS": "Настройки",
+    "LOGIN": "Войти",
+    "SIGNUP": "Зарегестрироваться",
+    "LOG_OUT": "Выйти"
+  },
+  "LOGIN": {
+    "PAGE_TITLE": "Логин",
+    "EMAIL_LABEL": "Email",
+    "PASSWORD_LABEL": "Пароль",
+    "SUBMIT": "Войти",
+    "REGISTER_LINK": "Зарегестрироваться!",
+    "LOGIN_TO_CONTINUE": "Пожалуйста, войдите, чтобы продолжить..."
+  },
+  "REGISTER": {
+    "PAGE_TITLE": "Регистрация",
+    "FIRST_NAME_LABEL": "Имя",
+    "LAST_NAME_LABEL": "Фамилия",
+    "EMAIL_LABEL": "Email",
+    "PASS_LABEL": "Пароль",
+    "SUBMIT_BUTTON": "Создать аккаунт",
+    "LOGIN_LINK": "Уже зарегестрированы?"
+  },
+  "EVENTS": {
+    "PAGE_TITLE": "События"
+  },
+  "ARTISTS": {
+    "PAGE_TITLE": "Выступающие"
+  },
+  "VENUES": {
+    "PAGE_TITLE": "Место проведения"
+  },
+  "HOW_IT_WORKS": {
+    "PAGE_TITLE": "Как это работает"
+  },
+  "MYSCENE": {
+    "PAGE_TITLE": "My Scene",
+    "AUTH_MATERIAL": "Аутентификация",
+    "NEW_EVENT_BUTTON": "Создать событие",
+    "MY_EVENTS_TITLE": "События",
+    "MY_ARTISTS_TITLE": "Выступающие",
+    "MY_VENUES_TITLE": "Площадки"
+  },
+  "MESSAGES": {
+    "PAGE_TITLE": "Сообщения"
+  },
+  "CALENDAR": {
+    "PAGE_TITLE": "Календарь"
+  },
+  "SETTINGS": {
+    "PAGE_TITLE": "Настройки",
+    "PERSONAL_INFO_TITLE": "Личная информация",
+    "PROFILE_IMAGE": "Фото",
+    "FIRST_NAME_LABEL":"Имя",
+    "LAST_NAME_LABEL":"Фамилия",
+    "EMAIL_TITLE":"Email",
+    "PHONE_TITLE":"Телефон",
+    "SUBMIT":"Обновить"
+  },
+  "EDIT_EVENT": {
+    "PAGE_TITLE": "Редактировать",
+    "BACK_BUTTON": "Назад",
+    "SAVE_BUTTON": "Сохранить",
+    "POSTER_ART_TITLE": "Постер",
+    "CHANGE_EVENT_POSTER": "Изменить ифнормацию о событии",
+    "LOCATION_TITLE": "Место",
+    "COLLABOATORS_TITLE": "Участники",
+    "TAGS_TITLE": "Теги",
+    "OTHER_ACTIONS": "Другое",
+    "DELETE_EVENT_BUTTON": "Удалить",
+    "NAME": "Название",
+    "SHORT_DESCRIPTION": "Описание",
+    "EVENT_STATUS": "Статус",
+    "DOOR_SALES": "Билеты на входе",
+    "PAID_EVENT": "Платный вход",
+    "SOLD_OUT": "Продано"
+  }
+}

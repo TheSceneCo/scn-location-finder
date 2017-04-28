@@ -1,0 +1,116 @@
+{
+  "COMMON": {
+    "BACK_BUTTON":"Back"
+  },
+  "ERROR": {
+    "FIRST_NAME_REQUIRED": "Please enter your first name",
+    "LAST_NAME_REQUIRED": "Please enter your last name",
+    "EMAIL_REQUIRED": "Please enter an email address",
+    "EMAIL_INVALID": "Please enter a valid email address",
+    "EMAIL_CONFLICT_1": "This email address is already registered with TheScene.Co",
+    "EMAIL_CONFLICT_2": "Sign in now?",
+    "PASS_REQUIRED": "Please enter a password",
+    "PASS_MIN_LENGTH": "Your password must be at least 8 characters",
+    "INVALID_CREDENTIALS": "Invalid Credentials"
+  },
+  "HEADER": {
+    "MENU": "Menu",
+    "LOGIN": "Login",
+    "SIGNUP": "Sign Up",
+    "NO_INTERNET": "Waiting for network..."
+  },
+  "FOOTER": {
+  },
+  "MENU": {
+    "EVENTS": "Find Events",
+    "ARTISTS": "Artists",
+    "VENUES": "Venues",
+    "HOW_IT_WORKS": "How it works",
+    "MYSCENE": "My Events",
+    "CALENDAR": "Calendar",
+    "MESSAGES": "Messages",
+    "SETTINGS": "Settings",
+    "LOGIN": "Login",
+    "SIGNUP": "Sign Up",
+    "LOG_OUT": "Log Out"
+  },
+  "LOGIN": {
+    "PAGE_TITLE": "Login",
+    "EMAIL_LABEL": "Email",
+    "PASSWORD_LABEL": "Password",
+    "SUBMIT": "Login",
+    "REGISTER_LINK": "Join TheScene.Co",
+    "LOGIN_TO_CONTINUE": "Please login to continue..."
+  },
+  "REGISTER": {
+    "PAGE_TITLE": "Register",
+    "FIRST_NAME_LABEL": "First Name",
+    "LAST_NAME_LABEL": "Last Name",
+    "EMAIL_LABEL": "Email",
+    "PASS_LABEL": "Password",
+    "SUBMIT_BUTTON": "Create Account",
+    "LOGIN_LINK": "Already a member? Login"
+  },
+  "EVENTS": {
+    "PAGE_TITLE": "Find Events"
+  },
+  "ARTISTS": {
+    "PAGE_TITLE": "Artists"
+  },
+  "VENUES": {
+    "PAGE_TITLE": "Venues"
+  },
+  "HOW_IT_WORKS": {
+    "PAGE_TITLE": "How it Works"
+  },
+  "MYSCENE": {
+    "PAGE_TITLE": "My Events",
+    "AUTH_MATERIAL": "Authenticated Material",
+    "NEW_EVENT_BUTTON": "Create New Event",
+    "MY_EVENTS_TITLE": "My Events",
+    "MY_ARTISTS_TITLE": "My Artists",
+    "MY_VENUES_TITLE": "My Venues"
+   },
+  "MESSAGES": {
+    "PAGE_TITLE": "Messages"
+  },
+  "CALENDAR": {
+    "PAGE_TITLE": "Calendar"
+  },
+  "SETTINGS": {
+    "PAGE_TITLE": "Settings",
+    "PERSONAL_INFO_TITLE": "Personal Information",
+    "PROFILE_IMAGE": "Profile Image",
+    "FIRST_NAME_LABEL":"First Name",
+    "LAST_NAME_LABEL":"Last Name",
+    "EMAIL_TITLE":"Email Address",
+    "PHONE_TITLE":"Contact Phone Number",
+    "SUBMIT":"Update Details"
+  },
+  "EDIT_EVENT": {
+    "PAGE_TITLE": "Edit Event",
+    "BACK_BUTTON": "Back",
+    "SAVE_BUTTON": "Save",
+    "POSTER_ART_TITLE": "Poster Art",
+    "CHANGE_EVENT_POSTER": "Change Event Poster",
+    "LOCATION_TITLE": "Location",
+    "COLLABOATORS_TITLE": "People",
+    "TAGS_TITLE": "Tags",
+    "CATEGORIES_TITLE": "Categories",
+    "DATETIME_TITLE": "Date and Time",
+    "OTHER_ACTIONS": "Other Actions",
+    "DELETE_EVENT_BUTTON": "Delete Event",
+    "NAME": "Name",
+    "SHORT_DESCRIPTION": "Short Description",
+    "EVENT_STATUS": "Status",
+    "DOOR_SALES": "Door Sales",
+    "PAID_EVENT": "Paid Event",
+    "SOLD_OUT": "Sold Out"
+  },
+  "404": {
+    "PAGE_TITLE": "Page Not Found",
+    "PAGE_MSG": "The page you have tried to navigate to doesn't exist.",
+    "VIEW_EVENTS_BUTTON": "Find Events",
+    "MYSCENE_BUTTON":"Go to Your Events"
+  }
+}

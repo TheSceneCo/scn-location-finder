@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="form-group" *ngIf="googleAutocomplete">
+    <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl">
+  </div>
+
+  <scn-typeahead *ngIf="!googleAutocomplete"
+      [placeholder]="'Search for location...'"
+      [(ngModel)]="asyncSelected"
+      [dataSource]="dataSource"
+      typeaheadOptionField="description"
+      typeaheadOptionsLimit="100"
+      (typeaheadOnSelect)="typeaheadOnSelect($event)"
+      ngDefaultControl
+  ></scn-typeahead>
+  
+  
+  
+  <sebm-google-map *ngIf="map" [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
+    <sebm-google-map-marker [latitude]="latitude" [longitude]="longitude"></sebm-google-map-marker>
+  </sebm-google-map>
+</div>
+

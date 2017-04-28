@@ -1,0 +1,76 @@
+{
+  "ERROR": {
+    "FIRST_NAME_REQUIRED": "Bitte geben Sie Ihren Vornamen ein",
+    "LAST_NAME_REQUIRED": "Bitte geben Sie ihren Nachnamen ein",
+    "EMAIL_REQUIRED": "Bitte geben Sie eine E-mail-Adresse ein",
+    "EMAIL_INVALID": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "EMAIL_CONFLICT_1": "Diese E-Mail -Adresse ist bereits mit TheScene.Co registriert",
+    "EMAIL_CONFLICT_2": "Schreib dich jetzt ein?",
+    "PASS_REQUIRED": "Bitte Passwort eingeben",
+    "PASS_MIN_LENGTH": "Ihr Passwort muss mindestens 8 Zeichen lang sein",
+    "INVALID_CREDENTIALS": "falsches Passwort oder Benutzername"
+  },
+  "HEADER": {
+    "MENU": "Menü",
+    "LOGIN": "Anmeldung",
+    "SIGN_UP": "Anmelden",
+    "NO_INTERNET": "Keine Internetverbindung"
+  },
+  "FOOTER": {
+  },
+  "MENU": {
+    "EVENTS": "Veranstaltungen",
+    "ARTISTS": "Künstler",
+    "VENUES": "Veranstaltungsorte",
+    "HOW_IT_WORKS": "Wie es funktioniert",
+    "MYSCENE": "Meine Szene",
+    "CALENDAR": "Kalender",
+    "MESSAGES": "Nachrichten",
+    "SETTINGS": "Einstellungen",
+    "LOGIN": "Anmeldung",
+    "SIGNUP": "Anmelden",
+    "LOG_OUT": "Ausloggen"
+  },
+  "LOGIN": {
+    "PAGE_TITLE": "Anmeldung",
+    "EMAIL_LABEL": "Email",
+    "PASSWORD_LABEL": "Passwort",
+    "SUBMIT": "Anmeldung",
+    "REGISTER_LINK": "Registriert TheScene.Co",
+    "LOGIN_TO_CONTINUE": "Bitte einloggen zum Fortfahren..."
+  },
+  "REGISTER": {
+    "PAGE_TITLE": "Neu registrieren",
+    "FIRST_NAME_LABEL": "Vorname",
+    "LAST_NAME_LABEL": "Nachname",
+    "EMAIL_LABEL": "Email",
+    "PASS_LABEL": "Passwort",
+    "SUBMIT_BUTTON": "Benutzerkonto anlegen",
+    "LOGIN_LINK": "Schon ein Mitglied? Anmeldung"
+  },
+  "EVENTS": {
+    "PAGE_TITLE": "Veranstaltungen"
+  },
+  "ARTISTS": {
+    "PAGE_TITLE": "Künstler"
+  },
+  "VENUES": {
+    "PAGE_TITLE": "Veranstaltungsorte"
+  },
+  "HOW_IT_WORKS": {
+    "PAGE_TITLE": "Wie es funktioniert"
+  },
+  "MYSCENE": {
+    "PAGE_TITLE": "Meine Szene",
+    "AUTH_MATERIAL": "Persönliche Angaben"
+  },
+  "MESSAGES": {
+    "PAGE_TITLE": "Nachrichten"
+  },
+  "CALENDAR": {
+    "PAGE_TITLE": "Kalender"
+  },
+  "SETTINGS": {
+    "PAGE_TITLE": "Einstellungen"
+  }
+}

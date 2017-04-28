@@ -1,0 +1,24 @@
+<div class="example">
+  <div>
+    <h3>Google Maps Places Autocomplete</h3>
+    <p></p>
+    <scn-location-finder [googleAutocomplete]="true" (onChangeLocation)="onChangeLocation($event)">
+    </scn-location-finder>
+  </div>
+
+  <div>
+    <h3>ScnTypeahead Autocomplete</h3>
+    <p></p>
+    <scn-location-finder (onChangeLocation)="onChangeLocation($event)">
+    </scn-location-finder>
+  </div>
+
+  <div>
+    <h3>With map</h3>
+    <p></p>
+    <scn-location-finder [map]="true" (onChangeLocation)="onChangeLocation($event)">
+    </scn-location-finder>
+  </div>
+
+
+</div>
