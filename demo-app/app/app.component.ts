@@ -7,6 +7,8 @@ const { version: moduleVersion, name: moduleName } = require('../../package.json
 export class MyRestConfig extends RestConfig {
   clientId = environment.scnApiLibrary.clientId;
   secret = environment.scnApiLibrary.secret;
+  authHost = environment.scnApiLibrary.authHost;
+  apiHost = environment.scnApiLibrary.apiHost;
 }
 
 @Component({

@@ -7,6 +7,8 @@ export const environment = {
   production: false,
   scnApiLibrary: {
     clientId: 'live-test',
-    secret: 'test'
+    secret: 'test',
+    apiHost: 'http://localhost:8080/api',
+    authHost: 'http://localhost:8080/auth',
   }
 };

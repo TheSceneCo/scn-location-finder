@@ -1,6 +1,6 @@
 {
   "name": "@thescene/scn-location-finder",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",
   "typings": "src/index.ts",
@@ -33,7 +33,7 @@
     "@ngx-translate/core": "^6.0.1",
     "@ngx-translate/http-loader": "0.0.3",
     "@thescene/scn-theme": "^1.0.3",
-    "@thescene/scn-typeahead": "file:///usr/local/lib/node_modules/@thescene/scn-typeahead",
+    "@thescene/scn-typeahead": "0.0.1",
     "@thescene/thescene-api-library": "^0.1.23",
     "@types/googlemaps": "^3.26.9",
     "angular2-google-maps": "^0.17.0",
