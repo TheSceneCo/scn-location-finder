@@ -3,8 +3,8 @@ import {
   EventEmitter, Input
 } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { MapsAPILoader } from 'angular2-google-maps/core';
 import { Observable } from 'rxjs';
+import { MapsAPILoader } from '@agm/core';
 
 declare var google;
 

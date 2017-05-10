@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { ScnLocationFinderComponent } from './scn-location-finder.component';
-import { AgmCoreModule } from 'angular2-google-maps/core';
+import { AgmCoreModule } from '@agm/core';
 import {} from '@types/googlemaps';
 import { ScnTypeaheadModule } from '@thescene/scn-typeahead'
 
