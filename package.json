@@ -1,6 +1,6 @@
 {
   "name": "@thescene/scn-location-finder",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "main": "src/index.ts",
   "typings": "src/index.ts",
