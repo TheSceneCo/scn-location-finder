@@ -16,7 +16,8 @@
   <div>
     <h3>With map</h3>
     <p></p>
-    <scn-location-finder [map]="true" (onChangeLocation)="onChangeLocation($event)">
+    <scn-location-finder [(locationModel)]="locationModel"
+        [map]="true" (onChangeLocation)="onChangeLocation($event)">
     </scn-location-finder>
   </div>
 

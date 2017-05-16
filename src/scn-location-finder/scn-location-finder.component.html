@@ -5,13 +5,17 @@
 
   <scn-typeahead *ngIf="!googleAutocomplete"
       [placeholder]="'Search for location...'"
-      [(ngModel)]="asyncSelected"
+      [(ngModel)]="locationModel"
       [dataSource]="dataSource"
       typeaheadOptionField="description"
       typeaheadOptionsLimit="100"
       (typeaheadOnSelect)="typeaheadOnSelect($event)"
       ngDefaultControl
   ></scn-typeahead>
+
+  <pre>
+    {{locationModel | json}}
+  </pre>
   
   
   
