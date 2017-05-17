@@ -13,12 +13,6 @@
       ngDefaultControl
   ></scn-typeahead>
 
-  <pre>
-    {{locationModel | json}}
-  </pre>
-  
-  
-  
   <agm-map *ngIf="map" [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
     <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
   </agm-map>

@@ -20,6 +20,7 @@
       "prefix": "demo",
       "styles": [
         "../node_modules/@thescene/scn-theme/theme.scss",
+        "../node_modules/color-themes-for-google-code-prettify/dist/themes/tranquil-heart.min.css",
         "styles.scss"
       ],
       "scripts": [],

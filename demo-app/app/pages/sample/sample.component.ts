@@ -14,6 +14,7 @@ export class SampleComponent implements OnInit {
   }
 
   onChangeLocation(event) {
+    this.locationModel = event;
     console.log('Event', event);
   }
 
