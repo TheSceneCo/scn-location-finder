@@ -10,5 +10,11 @@ export const environment = {
     secret: 'test',
     apiHost: 'http://localhost:8080/api',
     authHost: 'http://localhost:8080/auth',
+  },
+
+  facebook: {
+    clientId: '405230113176668',
+    authorizationEndpoint: 'https://www.facebook.com/v2.8/dialog/oauth',
+    url: ''
   }
 };
