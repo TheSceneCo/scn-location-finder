@@ -36,7 +36,7 @@
     "@ngx-translate/core": "^6.0.1",
     "@ngx-translate/http-loader": "0.0.3",
     "@thescene/scn-theme": "~1.0.3",
-    "@thescene/scn-typeahead": "~0.1.1",
+    "@thescene/scn-typeahead": "~0.2.0",
     "@thescene/thescene-api-library": "~0.1.23",
     "@types/googlemaps": "^3.26.9",
     "color-themes-for-google-code-prettify": "^2.0.4",

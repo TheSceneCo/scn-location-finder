@@ -5,7 +5,7 @@
 
   <scn-typeahead *ngIf="!googleAutocomplete"
       [placeholder]="'Search for location...'"
-      [(ngModel)]="locationModel"
+      [(ngModel)]="typeaheadValue"
       [dataSource]="dataSource"
       typeaheadOptionField="description"
       typeaheadOptionsLimit="100"

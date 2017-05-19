@@ -1,19 +1,85 @@
 import {
   Component, OnInit, ViewChild, ElementRef, NgZone, Output,
-  EventEmitter, Input
+  EventEmitter, Input, forwardRef
 } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { MapsAPILoader } from '@agm/core';
+import { Http } from '@angular/http';
+import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
 export declare var google: any;
+
+
+const noop = () => {
+};
+
+export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any = {
+  provide: NG_VALUE_ACCESSOR,
+  useExisting: forwardRef(() => ScnLocationFinderComponent),
+  multi: true
+};
 
 @Component({
   selector: 'scn-location-finder',
   templateUrl: './scn-location-finder.component.html',
-  styleUrls: ['./scn-location-finder.component.scss']
+  styleUrls: ['./scn-location-finder.component.scss'],
+  providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
 })
-export class ScnLocationFinderComponent implements OnInit {
+export class ScnLocationFinderComponent implements OnInit, ControlValueAccessor {
+  _typeaheadValue: any;
+
+  get typeaheadValue(): any {
+    return this._typeaheadValue;
+  };
+
+  set typeaheadValue(v: any) {
+    console.log('value', v);
+    if (v !== this._typeaheadValue) {
+
+      this._typeaheadValue = v;
+      this.onChangeCallback(v);
+    }
+  }
+
+  private onChangeCallback: (_: any) => void = noop;
+
+  public writeValue(value: any): void {
+    console.log('writeValue', value);
+    if (value !== this._typeaheadValue) {
+      if(value) {
+        this.mapsAPILoader.load().then(() => {
+          let geocoder = new google.maps.Geocoder();
+          geocoder.geocode({'address': value}, (results, status) => {
+            if (status == 'OK') {
+              if (results[0]) {
+                this.onChangeLocation.emit({geocode: results[0]});
+
+                this.ngZone.run(() => {
+                  //set latitude, longitude and zoom
+                  this.latitude = results[0].geometry.location.lat();
+                  this.longitude = results[0].geometry.location.lng();
+                });
+              }
+            } else {
+              alert('Geocode was not successful for the following reason: ' + status);
+            }
+          });
+        });
+      }
+
+
+      this._typeaheadValue = value;
+    }
+  }
+
+  public registerOnChange(fn: any): void {
+    this.onChangeCallback = fn;
+  }
+
+  public registerOnTouched(fn: any): void {
+  }
+
   public latitude: number;
   public longitude: number;
   public searchControl: FormControl;
@@ -22,20 +88,19 @@ export class ScnLocationFinderComponent implements OnInit {
   @ViewChild("search")
   public searchElementRef: ElementRef;
 
-
-  // public asyncSelected: string;
   public dataSource: Observable<any>;
 
   @Input() googleAutocomplete: boolean = false;
   @Input() map: boolean = false;
-  @Input() locationModel: any;
   @Output() onChangeLocation: EventEmitter<any> = new EventEmitter();
 
   constructor(
       private mapsAPILoader: MapsAPILoader,
-      private ngZone: NgZone
+      private ngZone: NgZone,
+      private http: Http
   ) {
     this.setDataSource();
+
   }
 
   ngOnInit() {
@@ -51,8 +116,6 @@ export class ScnLocationFinderComponent implements OnInit {
 
     //load Places Autocomplete
     this.mapsAPILoader.load().then(() => {
-      // this.setCurrentPosition();
-
       // console.log(this.searchElementRef);
       if (!this.searchElementRef) {
         return;
@@ -62,6 +125,7 @@ export class ScnLocationFinderComponent implements OnInit {
       });
       autocomplete.addListener("place_changed", () => {
         this.ngZone.run(() => {
+
           //get the place result
           let place: google.maps.places.PlaceResult = autocomplete.getPlace();
 
@@ -81,42 +145,11 @@ export class ScnLocationFinderComponent implements OnInit {
     });
   }
 
-  public setCurrentPosition() {
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        console.log(position);
-        this.latitude = position.coords.latitude;
-        this.longitude = position.coords.longitude;
-        this.zoom = 12;
-        let geocoder = new google.maps.Geocoder();
-        let latlng = new google.maps.LatLng(this.latitude, this.longitude);
-        //
-        geocoder.geocode({
-          location: latlng,
-        }, (results, status) => {
-          if (status === 'OK') {
-            console.log(results);
-            if (results[0]) {
-              // this.ngZone.run(() => {
-              //   //set latitude, longitude and zoom
-              //   this.latitude = results[0].geometry.location.lat();
-              //   this.longitude = results[0].geometry.location.lng();
-              //
-              // this.locationModel = 'asdas';
-                this.onChangeLocation.emit({geocode: results[0]});
-              // });
-            }
-          }
-        });
-      });
-    }
-  }
-
   setDataSource() {
     this.dataSource = Observable
         .create((observer: any) => {
           // Runs on every search
-          observer.next(this.locationModel);
+          observer.next(this.typeaheadValue);
 
         })
         .mergeMap((token: string) => {
@@ -162,6 +195,7 @@ export class ScnLocationFinderComponent implements OnInit {
             this.longitude = results[0].geometry.location.lng();
 
             this.onChangeLocation.emit({item: e, geocode: results[0]});
+            console.log(this.typeaheadValue);
           });
         }
       }

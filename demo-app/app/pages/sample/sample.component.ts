@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sample.component.scss']
 })
 export class SampleComponent implements OnInit {
-  locationModel: any;
+  locationModel: any = 'Bulevardul Alexandru Lăpușneanu R, Констанца, Румыния';
 
   constructor() { }
 
@@ -14,8 +14,7 @@ export class SampleComponent implements OnInit {
   }
 
   onChangeLocation(event) {
-    this.locationModel = event;
+    // this.locationModel = event;
     console.log('Event', event);
   }
-
 }

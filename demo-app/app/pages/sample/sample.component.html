@@ -32,14 +32,15 @@
 <div>
   <h3>With map</h3>
   <p></p>
-  <scn-location-finder
+  <scn-location-finder [(ngModel)]="locationModel"
+                       ngDefaultControl
                        [map]="true" (onChangeLocation)="onChangeLocation($event)">
   </scn-location-finder>
   <pre>returnModel: {{locationModel | json}}</pre>
   <pre class="prettyprint">
     <code>
       <![CDATA[
-      <scn-location-finder
+      <scn-location-finder [(locationModel)]="locationModel"
                            [map]="true" (onChangeLocation)="onChangeLocation($event)">
       </scn-location-finder>
       ]]>
